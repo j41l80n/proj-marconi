@@ -11,17 +11,22 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+// custom
+import { ProgramacaoPageModule } from '../pages/programacao/programacao.module';
+
 @NgModule({
   declarations: [
     MyApp,
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    // custom
+    ProgramacaoPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
